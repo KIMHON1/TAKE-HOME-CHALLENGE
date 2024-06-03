@@ -13,9 +13,7 @@
   <body>
     <div class="full-image" id="full-image-box">
       <img src="images/aboodi.jpg" id="full-image" alt="aboodi not found" />
-      <span onclick="closeFullimage()"
-        ><i class="fa fa-close" style="font-size: 50px"></i
-      ></span>
+      <span onclick="closeFullimage()"><i class="fa fa-close"></i></span>
     </div>
     <div class="image-gallery">
       <img
@@ -79,19 +77,6 @@
         onclick="openFullimage(this.src)"
       />
     </div>
-
-    <script>
-      var fullImageBox = document.getElementById("full-image-box");
-      var fullImage = document.getElementById("full-image");
-
-      function openFullimage(pic) {
-        fullImageBox.style.display = "flex";
-        fullImage.src = pic;
-      }
-
-      function closeFullimage() {
-        fullImageBox.style.display = "none";
-      }
-    </script>
+    <script src="app.js"></script>
   </body>
 </html>

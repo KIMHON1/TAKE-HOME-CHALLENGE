@@ -48,8 +48,8 @@ body {
 .full-image span {
   position: absolute;
   top: 5%;
-  right: 5%;
+  right: 15%;
   font-size: 50px;
-  color: #fff;
+  color: white;
   cursor: pointer;
 }
