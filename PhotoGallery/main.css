@@ -20,3 +20,36 @@ body {
   width: 100%;
   cursor: pointer;
 }
+
+.image-gallery img:hover {
+  transform: scale(0.8) rotate(20deg);
+  border-radius: 20px;
+  box-shadow: 0 32px 7px hsl(295, 27%, 92%);
+}
+
+.full-image {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.full-image img {
+  width: 90%;
+  max-width: 500px;
+}
+
+.full-image span {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 50px;
+  color: #fff;
+  cursor: pointer;
+}
