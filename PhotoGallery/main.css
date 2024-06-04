@@ -1,55 +1,65 @@
+/* Universal selector to reset margin and padding for all elements and set the default font */
 * {
   margin: 0;
   padding: 0;
-  font-family: san-serif;
+  font-family: sans-serif;
 }
 
+/* Body styling with a background color */
 body {
   background: #ecf4fb;
 }
 
+/* Container for the image gallery */
 .image-gallery {
-  width: 80%;
-  margin: 100px auto 50px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 30px;
+  width: 80%; /* Width of the gallery */
+  margin: 100px auto 50px; /* Center the gallery with top margin */
+  display: grid; /* Use CSS Grid layout */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Responsive columns */
+  grid-gap: 30px; /* Space between grid items */
 }
 
+/* Styling for each image in the gallery */
 .image-gallery img {
-  width: 100%;
-  cursor: pointer;
+  width: 100%; /* Images take the full width of their container */
+  cursor: pointer; /* Change cursor to pointer on hover */
 }
 
+/* Hover effect for images in the gallery */
 .image-gallery img:hover {
-  transform: scale(0.8) rotate(20deg);
-  border-radius: 20px;
-  box-shadow: 0 32px 7px hsl(295, 27%, 92%);
+  transform: scale(0.8); /* Scale down the image */
+  border-radius: 20px; /* Add rounded corners */
 }
 
+/* Full image display box that overlays the entire screen */
 .full-image {
-  width: 100%;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.9);
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
+  width: 100%; /* Full width */
+  height: 100vh; /* Full viewport height */
+  background: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
+  position: fixed; /* Fixed position to overlay content */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  display: none; /* Hidden by default */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  z-index: 100; /* Ensure it appears above other content */
 }
 
+/* Full-sized image styling */
 .full-image img {
-  width: 90%;
-  max-width: 500px;
+  width: 90%; /* Image width at 90% of container */
+  max-width: 500px; /* Maximum width constraint */
 }
 
+/* Close button styling within the full image display */
 .full-image span {
-  position: absolute;
-  top: 5%;
-  right: 15%;
-  font-size: 50px;
-  color: white;
-  cursor: pointer;
+  position: absolute; /* Position it absolutely within the container */
+  top: 5%; /* 5% from the top */
+  right: 15%; /* 15% from the right */
+  font-size: 50px; /* Large font size for the close icon */
+  color: white; /* White color */
+  cursor: pointer; /* Pointer cursor on hover */
 }

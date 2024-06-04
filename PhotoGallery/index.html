@@ -4,18 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallery</title>
+    <!-- Link to the main CSS file -->
     <link rel="stylesheet" href="main.css" />
+    <!-- Link to Font Awesome for icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
   <body>
+    <!-- Full image display box that appears when an image is clicked -->
     <div class="full-image" id="full-image-box">
+      <!-- Full-sized image -->
       <img src="images/aboodi.jpg" id="full-image" alt="aboodi not found" />
+      <!-- Close button to close the full image display -->
       <span onclick="closeFullimage()"><i class="fa fa-close"></i></span>
     </div>
+    <!-- Image gallery with thumbnails -->
     <div class="image-gallery">
+      <!-- Each image thumbnail in the gallery with an onclick event to open the full-sized image -->
       <img
         src="images/dha.jpg"
         alt="dha not found"
@@ -77,6 +84,7 @@
         onclick="openFullimage(this.src)"
       />
     </div>
+    <!-- Link to the JavaScript file -->
     <script src="app.js"></script>
   </body>
 </html>
